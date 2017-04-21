@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather API</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <input id="city-input" type="text" placeholder="City">
+        <button type="button" class="query_btn btn btn-default btn-sm">Search</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <input id="zip-input" type="text" placeholder="Zip Code">
+        <button type="button" class="query_btn btn btn-default btn-sm">Search</button><br>
+      </div>
+    </div>
+    <div class="row">
+      <label id="alert"></label>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h2>City: <span id="city"></span></h2>
+          <hr>
+          <h2>Main Weather: <span id="main_weather"></span></h2>
+          <h2>Description: <span id="description_weather"></span></h2>
+          <img id="weather_image" src="">
+          <hr>
+          <h2>Temperature: <span id="temperature"></span><span id="unit"></span></h2>
+          <p>
+            <button id="convertToCelsius" class="btn btn-default btn-sm">Convert to Celsius</button>
+            <button id="convertToFahrenheit" class="btn btn-default btn-sm">Convert to FahrenHeit</button>
+          </p>
+          <hr>
+          <h2>Pressure: <span id="pressure"></span></h2>
+          <h2>Humidity: <span id="humidity"></span></h2>
+          <hr>
+          <h2>Wind Speed: <span id="windspeed"></span></h2>
+          <h2>Wind Direction: <span id="winddir"></span></h2>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body{
+	padding: 20px 0;
+	/* background: linear-gradient(#3399aa, #3399ff); */
+	background-color: #3399ff;
+}
+h2{
+	color: white;
+	margin: 15px 0 10px 0;
+}
+hr{
+	margin: 15px 0;
+}
+p{
+	margin-top: 20px;
+}
+input[type=text]{
+	text-transform: capitalize;
+	width: 200px;
+	line-height: 27px;
+	border-radius: 3px;
+	padding: 0 5px;
+}
+#alert{
+	display: none;
+	padding-top: 10px;
+    color: #000066;
+    font-size: 1.5rem;
+}
+#unit{
+	margin-left: 5px;
+}
+.row{
+	margin-bottom: 5px;
+	text-align: center;
+}
