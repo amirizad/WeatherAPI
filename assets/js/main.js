@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$('.query_btn').click(function(event){
 		var query_param = $(this).prev().val();
 		var searchBy = $(this).prev().attr('placeholder');
-		var apiURL = "https://api.openweathermap.org/data/2.5/weather?units=imperial&";
+		var apiURL = "http://api.openweathermap.org/data/2.5/weather?units=imperial&";
 		$('#alert').css('display','none');
 
 		if(query_param.length > 0){
